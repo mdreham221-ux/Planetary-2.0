@@ -219,11 +219,7 @@ body {
     line-height: 1.6;
 }
 
-/* Services Section */
-.services-section {
-    padding: 100px 0;
-    background: #0c0c2b;
-}
+
 
 .services-intro {
     text-align: center;
@@ -349,7 +345,7 @@ body {
 }
 
 .divider-line {
-    width: 200px;
+    width: 500px;
     height: 2px;
     background: linear-gradient(90deg, transparent, #4fc3f7, transparent);
 }
@@ -422,10 +418,10 @@ body {
 }
 
 .drop-button:hover{
-    
     box-shadow: 0 10px 25px rgba(41, 182, 246, 0.3);
 
 }
+
 
 
 
