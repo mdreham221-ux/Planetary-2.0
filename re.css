@@ -103,6 +103,7 @@ body {
     top: 0;
     z-index: 1000;
     padding: 1rem 0;
+    
 }
 
 .nav-container {
@@ -348,13 +349,6 @@ body {
     font-weight: bold;
 }
 
-/* Footer */
-.footer {
-    background: #0c0c2b;
-    padding: 2rem 0;
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -485,6 +479,166 @@ body {
     
     box-shadow: 0 10px 25px rgba(41, 182, 246, 0.3);
 
+}
+
+
+/*  LOGIN BUTTON */
+.login-btn {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 99px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 0 12px rgba(0, 162, 255, 0.4);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: absolute;
+  left: 82%;
+  bottom: 022%;
+  
+  
+  
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  box-shadow: 0 0 25px rgba(0, 183, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+/*  MODAL BACKGROUND */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+}
+
+/* When opened (via anchor target) */
+.modal:target {
+  display: flex;
+  animation: fadeIn 0.4s ease;
+}
+
+/*  MODAL BOX */
+.modal-content {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  padding: 35px 30px;
+  width: 90%;
+  max-width: 380px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  position: relative;
+  animation: slideUp 0.4s ease;
+}
+
+/*  CLOSE BUTTON */
+.close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  text-decoration: none;
+  font-size: 26px;
+  color: #fff;
+  transition: color 0.2s;
+}
+.close:hover {
+  color: #ff5252;
+}
+
+/*  TITLE */
+.modal-content h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #4fc3f7, #29b6f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*  FORM */
+.login-form .form-group {
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.login-form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #bbdefb;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+.login-form input::placeholder {
+  color: #ddd;
+}
+.login-form input:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/*  SUBMIT BUTTON */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #29b6f6, #00d4ff);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.submit-btn:hover {
+  background: linear-gradient(135deg, #00bfff, #007bff);
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+/* 🪩 SIGNUP TEXT */
+.signup-text {
+  margin-top: 18px;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+}
+.signup-text a {
+  color: #00cfff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* 🌈 ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 
