@@ -149,6 +149,7 @@ body {
     background-position: center;
       object-fit: cover;
     transition: transform 0.5s ease;
+    
 
 
     
@@ -630,7 +631,7 @@ body {
   text-decoration: underline;
 }
 
-/* 🌈 ANIMATIONS */
+/*  ANIMATIONS */
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.9); }
   to { opacity: 1; transform: scale(1); }
@@ -643,4 +644,27 @@ body {
 
 
 
+/*  Sign Up  */
+.signup-form .form-group {
+  margin-bottom: 18px;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 15px;
+}
+
+.signup-form input:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.signup-form .submit-btn {
+  margin-top: 8px;
+}
 
